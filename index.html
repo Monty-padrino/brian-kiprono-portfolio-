@@ -1,95 +1,778 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brian Kiprono | Paid Media & Growth Marketing Specialist</title>
-<meta name="description" content="Brian Kiprono — Paid Media & Growth Marketing Specialist portfolio.">
-<style>
-:root{--bg:#07111f;--panel:#0d1b2e;--text:#eef4ff;--muted:#a7b4c8;--a:#38bdf8;--b:#818cf8;--line:rgba(255,255,255,.10)}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 80% 8%,rgba(56,189,248,.13),transparent 28%),radial-gradient(circle at 10% 24%,rgba(129,140,248,.10),transparent 25%),var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:30;background:rgba(7,17,31,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.navin{max-width:1160px;margin:auto;padding:17px 24px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:900}.logo span{color:var(--a)}.navlinks{display:flex;gap:20px;font-size:13px;color:var(--muted)}.navlinks a:hover{color:#fff}
-section{max-width:1160px;margin:auto;padding:82px 24px}.hero{display:grid;grid-template-columns:1.18fr .82fr;gap:62px;align-items:center;padding-top:90px}
-.badge,.tag{display:inline-flex;font-size:11px;font-weight:900;letter-spacing:1.5px;color:#c6efff;text-transform:uppercase}.badge{padding:8px 11px;border:1px solid rgba(56,189,248,.25);background:rgba(56,189,248,.08);border-radius:99px}
-h1{font-size:clamp(46px,7vw,84px);line-height:.96;letter-spacing:-3px;margin:20px 0}.gradient{background:linear-gradient(100deg,#fff,#8be4ff,#9aa7ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{color:var(--muted);font-size:19px;max-width:720px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 18px;border:1px solid var(--line);border-radius:12px;font-weight:800}.btn.primary{background:linear-gradient(100deg,var(--a),var(--b));color:#06111f;border:0}
-.profile{padding:18px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border-radius:28px}.profile img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:19px;display:block}.profilecap{display:flex;justify-content:space-between;gap:14px;padding:15px 3px 0;color:var(--muted);font-size:13px}.profilecap strong{color:#fff}
-.kicker{color:var(--a);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}h2{font-size:40px;line-height:1.1;letter-spacing:-1px;margin:9px 0 12px}.sub{color:var(--muted);max-width:800px}
-.metricbar{display:grid;grid-template-columns:repeat(4,1fr);margin-top:30px;background:var(--line);gap:1px;border:1px solid var(--line);border-radius:18px;overflow:hidden}.metric{background:#09172a;padding:24px}.metric b{display:block;font-size:28px}.metric span{font-size:12px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.card{background:rgba(13,27,46,.86);border:1px solid var(--line);border-radius:20px;padding:21px}.card h3{margin:0 0 6px}.card p{margin:0;color:var(--muted);font-size:14px}
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}.case-card{background:rgba(13,27,46,.90);border:1px solid var(--line);border-radius:24px;padding:23px}.case-head{display:flex;justify-content:space-between;gap:15px}.case-head h3{font-size:25px;line-height:1.15;margin:7px 0 0}.budget{font-weight:900;color:#bfeeff;font-size:13px;white-space:nowrap}.budget span{color:var(--muted);font-weight:600}
-.mock{margin-top:18px;border:1px solid var(--line);border-radius:18px;background:#081426;padding:15px}.mock-top{display:flex;justify-content:space-between;color:#8ea2bc;font-size:10px;letter-spacing:1px;text-transform:uppercase}.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:13px 0}.mini div{background:#0d1d31;border:1px solid var(--line);border-radius:11px;padding:10px}.mini b{display:block;font-size:13px}.mini small{color:var(--muted)}.bars{height:100px;display:flex;align-items:flex-end;gap:7px}.bars i{display:block;flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,var(--a),var(--b))}
-.funnel{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;margin:14px 0}.funnel span{padding:7px 9px;background:rgba(56,189,248,.05);border:1px solid rgba(56,189,248,.2);border-radius:9px;font-size:10px}.funnel em{color:var(--a);font-style:normal}
-.creatives{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}.creative{min-height:118px;padding:13px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(56,189,248,.16),rgba(129,140,248,.08));display:flex;flex-direction:column;justify-content:space-between}.creative:nth-child(2){background:linear-gradient(145deg,rgba(129,140,248,.17),rgba(56,189,248,.07))}.creative:nth-child(3){background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(56,189,248,.08))}.creative span{font-size:9px;font-weight:900;letter-spacing:1px;color:#c6efff}.creative b{font-size:14px;line-height:1.1}.creative small{color:var(--muted);font-size:10px}
-.flow{display:grid;justify-items:center;gap:7px;margin-top:18px}.node{width:82%;padding:9px 11px;text-align:center;background:#0a192b;border:1px solid rgba(56,189,248,.2);border-radius:11px;font-size:11px}.arrow{color:var(--a);font-weight:900}.split{width:82%;display:grid;grid-template-columns:1fr 1fr;gap:7px}.split span{padding:9px;text-align:center;background:#0a192b;border:1px solid var(--line);border-radius:11px;font-size:10px}
-.report{margin-top:18px;padding:15px;border:1px solid var(--line);border-radius:18px;background:#081426}.report-head,.rrow{display:flex;justify-content:space-between;gap:10px}.report-head{font-size:12px}.report-head span{color:var(--muted)}.rrow{align-items:center;margin-top:13px;font-size:10px;color:#d4dfef}.rrow .meter{flex:1;height:7px;background:#122238;border-radius:99px;overflow:hidden;margin:0 8px}.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--b));border-radius:99px}.insight{margin-top:11px;padding:10px 12px;border:1px dashed rgba(56,189,248,.25);border-radius:12px;display:flex;justify-content:space-between;font-size:11px;gap:10px}.insight span{color:var(--muted);text-align:right}
-.case-card p{font-size:14px;color:var(--muted)}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}.chip{font-size:10px;color:#d8e4f4;padding:5px 8px;border:1px solid var(--line);border-radius:99px}.note{margin-top:18px;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#aebbd0;font-size:12px}
-.timeline{display:grid;gap:16px;margin-top:28px}.job{display:grid;grid-template-columns:230px 1fr;gap:20px;padding:22px;border-radius:18px;background:rgba(13,27,46,.72);border:1px solid var(--line)}.job time{color:var(--a);font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.job h3{margin:0 0 5px}.job p{margin:0;color:var(--muted);font-size:14px}
-.contact{background:linear-gradient(135deg,rgba(56,189,248,.14),rgba(129,140,248,.12));border:1px solid var(--line);border-radius:28px;padding:38px}.contact .sub{max-width:680px}
-footer{text-align:center;color:var(--muted);font-size:12px;padding:25px 24px 45px}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:55px}.grid{grid-template-columns:repeat(2,1fr)}.case-grid{grid-template-columns:1fr}.metricbar{grid-template-columns:repeat(2,1fr)}.job{grid-template-columns:1fr}.navlinks{display:none}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}.creative{min-height:100px}.creatives{grid-template-columns:1fr}.case-head{flex-direction:column}.budget{white-space:normal}.insight{flex-direction:column}.insight span{text-align:left}}
-</style>
-</head>
-<body>
-<nav class="nav"><div class="navin"><a class="logo" href="#top">BRIAN<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#case-studies">Case studies</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brian Kiprono | Paid Media & Growth Marketing Specialist</title>
 
-<main id="top">
-<section class="hero">
-<div>
-<div class="badge">PAID MEDIA · GROWTH · PERFORMANCE MARKETING</div>
-<h1>Turning <span class="gradient">ad spend</span> into growth.</h1>
-<p class="lead">I'm Brian Kiprono, a Paid Media & Growth Marketing Specialist with 5+ years of experience across paid acquisition, full-funnel growth, CRM automation, email marketing, content and performance analytics.</p>
-<div class="cta"><a class="btn primary" href="#contact">Hire me</a><a class="btn" href="#case-studies">View case studies</a><a class="btn" href="Brian_Kiprono_Visual_Digital_Marketing_Portfolio.pdf">Download PDF</a></div>
-</div>
-<div class="profile"><img src="Brian_Kiprono_Profile.jpg" alt="Brian Kiprono"><div class="profilecap"><span><strong>Brian Kiprono</strong><br>Paid Media & Growth Marketing Specialist</span><span>Kenya · Remote</span></div></div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1120;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11, 17, 32, 0.95);
+      border-bottom: 1px solid #1e293b;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+      background:
+        radial-gradient(circle at top right, #172554, transparent 40%),
+        #0b1120;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #334155;
+      border-radius: 30px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #07111f;
+    }
+
+    .btn-secondary {
+      border: 1px solid #475569;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .stat:last-child {
+      border-bottom: none;
+    }
+
+    .stat strong {
+      font-size: 20px;
+    }
+
+    .stat small {
+      color: #94a3b8;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      margin-bottom: 45px;
+    }
+
+    .section-title p {
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+    }
+
+    .section-title span {
+      color: #38bdf8;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .about-text {
+      color: #cbd5e1;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #111827;
+      border: 1px solid #263449;
+      padding: 10px 14px;
+      border-radius: 7px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    /* CASE STUDIES */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      background: #111827;
+      border: 1px solid #1e293b;
+      padding: 30px;
+      border-radius: 16px;
+      transition: .3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .project-number {
+      color: #38bdf8;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .project p {
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .project ul {
+      margin-left: 18px;
+      color: #cbd5e1;
+    }
+
+    .project li {
+      margin-bottom: 8px;
+    }
+
+    .tools {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tool {
+      font-size: 11px;
+      background: #0b1120;
+      border: 1px solid #334155;
+      padding: 6px 9px;
+      border-radius: 5px;
+      color: #94a3b8;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+      display: grid;
+      gap: 20px;
+    }
+
+    .job {
+      background: #111827;
+      border-left: 3px solid #38bdf8;
+      padding: 25px;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .job h3 {
+      font-size: 21px;
+    }
+
+    .job .company {
+      color: #38bdf8;
+      margin: 5px 0 15px;
+    }
+
+    .job p,
+    .job li {
+      color: #cbd5e1;
+    }
+
+    .job ul {
+      margin-left: 20px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: #111827;
+      border-radius: 20px;
+      padding: 60px 30px;
+      border: 1px solid #1e293b;
+    }
+
+    .contact h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #94a3b8;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+      color: #cbd5e1;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 35px 0;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .hero-grid,
+      .about-grid,
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Brian<span>Kiprono</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="tag">PAID MEDIA • GROWTH • DIGITAL MARKETING</div>
+
+      <h1>
+        Brian<br>
+        <span>Kiprono</span>
+      </h1>
+
+      <p>
+        Paid Media & Growth Marketing Specialist helping brands turn
+        digital campaigns, content, and customer journeys into measurable
+        business growth.
+      </p>
+
+      <div class="buttons">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Let's Work Together</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Marketing Snapshot</h3>
+
+      <div class="stat">
+        <div>
+          <strong>5+</strong><br>
+          <small>Years Experience</small>
+        </div>
+      </div>
+
+      <div class="stat">
+        <div>
+          <strong>$50K–$500K</strong><br>
+          <small>Monthly Ad Budgets</small>
+        </div>
+      </div>
+
+      <div class="stat">
+        <div>
+          <strong>Google + Meta</strong><br>
+          <small>Paid Acquisition</small>
+        </div>
+      </div>
+
+      <div class="stat">
+        <div>
+          <strong>Full Funnel</strong><br>
+          <small>Growth Marketing</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+
+    <div class="section-title">
+      <p>01 — About Me</p>
+      <h2>Marketing built around <span>growth.</span></h2>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <p>
+          I'm Brian Kiprono, a Paid Media & Growth Marketing Specialist
+          with 5+ years of experience across paid advertising, content,
+          CRM automation, email marketing, and performance analytics.
+        </p>
+
+        <p>
+          My approach combines creative testing, audience research,
+          full-funnel acquisition, conversion tracking, and continuous
+          performance optimization.
+        </p>
+
+        <p>
+          I work across Google Ads, Meta Ads, GoHighLevel, GA4,
+          Looker Studio, Power BI, and content platforms to connect
+          marketing activity with measurable business outcomes.
+        </p>
+      </div>
+
+      <div id="skills">
+        <div class="skills">
+          <div class="skill">Google Ads</div>
+          <div class="skill">Meta Ads</div>
+          <div class="skill">Paid Media</div>
+          <div class="skill">DTC Marketing</div>
+          <div class="skill">Growth Strategy</div>
+          <div class="skill">Lead Generation</div>
+          <div class="skill">Funnel Strategy</div>
+          <div class="skill">GoHighLevel</div>
+          <div class="skill">Email Marketing</div>
+          <div class="skill">Social Media</div>
+          <div class="skill">Short-Form Content</div>
+          <div class="skill">GA4</div>
+          <div class="skill">Looker Studio</div>
+          <div class="skill">Power BI</div>
+          <div class="skill">Creative Testing</div>
+          <div class="skill">Conversion Tracking</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section id="about"><div class="kicker">Profile</div><h2>Strategic thinking. Hands-on execution.</h2><p class="sub">I combine paid media execution with CRM automation, lifecycle marketing, content, creative testing and analytics to build growth systems around the full customer journey.</p>
-<div class="metricbar"><div class="metric"><b>$100K–$500K</b><span>Monthly ad budgets managed</span></div><div class="metric"><b>5+ years</b><span>Digital marketing experience</span></div><div class="metric"><b>Full-funnel</b><span>Acquisition to nurture</span></div><div class="metric"><b>ROI-led</b><span>Testing & optimization</span></div></div></section>
 
-<section id="capabilities"><div class="kicker">Capabilities</div><h2>What I build</h2><p class="sub">Paid media, lead generation, CRM/lifecycle automation, creative and data-driven performance reporting.</p>
-<div class="grid">
-<div class="card"><h3>Paid Media</h3><p>Google Ads and Meta Ads, campaign structuring, conversion tracking, budget scaling, audience targeting and CPA optimization.</p></div>
-<div class="card"><h3>Lead Generation</h3><p>Acquisition campaigns, funnel strategy, retargeting and conversion-focused optimization.</p></div>
-<div class="card"><h3>CRM & Automation</h3><p>GoHighLevel pipelines, workflows, email/SMS automations and lead follow-up systems.</p></div>
-<div class="card"><h3>Analytics</h3><p>GA4, Looker Studio and Power BI dashboards, KPI reporting, attribution and ROI analysis.</p></div>
-</div></section>
+<!-- WORK -->
+<section id="work">
+  <div class="container">
 
-<section id="case-studies"><div class="kicker">Case studies</div><h2>Campaigns, funnels & performance systems</h2><p class="sub">These visuals represent the campaign structures and capabilities documented in the latest CV. They are portfolio mockups, not invented client performance figures.</p>
-<div class="case-grid">
-<article class="case-card"><div class="case-head"><div><span class="tag">GOOGLE ADS · LEAD GENERATION</span><h3>High-intent acquisition system</h3></div><span class="budget">$100K–$500K<span>/mo</span></span></div>
-<div class="mock"><div class="mock-top"><span>Campaign overview</span><span>PAID SEARCH</span></div><div class="mini"><div><b>Search</b><small>Intent-led</small></div><div><b>CPA</b><small>Optimize</small></div><div><b>CVR</b><small>Track</small></div></div><div class="bars"><i style="height:42%"></i><i style="height:68%"></i><i style="height:55%"></i><i style="height:84%"></i><i style="height:71%"></i><i style="height:93%"></i><i style="height:79%"></i></div></div>
-<div class="funnel"><span>Search intent</span><em>→</em><span>Ad</span><em>→</em><span>Landing page</span><em>→</em><span>Lead</span></div><p>Campaign structure, audience and keyword research, conversion tracking, budget pacing and continuous efficiency optimization.</p><div class="chips"><span class="chip">Google Ads</span><span class="chip">Tracking</span><span class="chip">Funnels</span></div></article>
+    <div class="section-title">
+      <p>02 — Selected Work</p>
+      <h2>Campaigns & <span>Growth Projects</span></h2>
+    </div>
 
-<article class="case-card"><div class="case-head"><div><span class="tag">META ADS · CREATIVE TESTING</span><h3>Creative & audience testing engine</h3></div><span class="budget">$100K–$500K<span>/mo</span></span></div>
-<div class="creatives"><div class="creative"><span>HOOK A</span><b>Problem → Solution</b><small>Test creative</small></div><div class="creative"><span>HOOK B</span><b>Benefit-led</b><small>Test creative</small></div><div class="creative"><span>HOOK C</span><b>Social proof</b><small>Test creative</small></div></div>
-<div class="funnel"><span>Cold audience</span><em>→</em><span>Engaged</span><em>→</em><span>Retarget</span></div><p>Audience segmentation, creative/hook testing, lead and conversion campaigns, budget monitoring and performance reporting.</p><div class="chips"><span class="chip">Meta Ads</span><span class="chip">Creative testing</span><span class="chip">Retargeting</span></div></article>
+    <div class="projects">
 
-<article class="case-card"><div class="case-head"><div><span class="tag">GOHIGHLEVEL · CRM AUTOMATION</span><h3>Lead nurture & follow-up system</h3></div><span class="budget">FULL FUNNEL</span></div>
-<div class="flow"><div class="node">Lead captured</div><div class="arrow">↓</div><div class="node">Instant follow-up</div><div class="arrow">↓</div><div class="split"><span>Engaged</span><span>Not engaged</span></div><div class="arrow">↓</div><div class="node">Book / Convert</div></div>
-<p>GoHighLevel workflows, opt-in pages, newsletters, nurture sequences, follow-up automation and customer journey management.</p><div class="chips"><span class="chip">GoHighLevel</span><span class="chip">Email</span><span class="chip">Automation</span></div></article>
+      <!-- PROJECT 1 -->
+      <div class="project">
+        <div class="project-number">01 / DTC & PAID ACQUISITION</div>
 
-<article class="case-card"><div class="case-head"><div><span class="tag">ANALYTICS · GROWTH ITERATION</span><h3>Performance command center</h3></div><span class="budget">WEEKLY</span></div>
-<div class="report"><div class="report-head"><b>Performance review</b><span>Weekly</span></div><div class="rrow"><span>Spend</span><div class="meter"><i style="width:74%"></i></div><b>PACE</b></div><div class="rrow"><span>Leads</span><div class="meter"><i style="width:61%"></i></div><b>VOLUME</b></div><div class="rrow"><span>CPA</span><div class="meter"><i style="width:43%"></i></div><b>EFFICIENCY</b></div><div class="rrow"><span>Creative</span><div class="meter"><i style="width:82%"></i></div><b>WINNERS</b></div></div>
-<div class="insight"><b>Optimization loop</b><span>Measure → Diagnose → Test → Scale</span></div><p>GA4, Looker Studio and Power BI reporting used to monitor KPIs and guide optimization decisions.</p><div class="chips"><span class="chip">GA4</span><span class="chip">Looker Studio</span><span class="chip">Power BI</span></div></article>
-</div>
-<div class="note"><b>Evidence note:</b> The latest CV documents the $100K–$500K monthly budget range and the responsibilities shown here. No client results or KPIs have been fabricated.</div></section>
+        <h3>Paid Media & DTC Growth</h3>
 
-<section id="experience"><div class="kicker">Experience</div><h2>Selected career experience</h2><div class="timeline">
-<div class="job"><time>Aug 2025 — Present</time><div><h3>Digital Marketing Manager · Farout Nomads Trips & Tours</h3><p>Lead digital marketing across social media, email, workshops, campaigns and customer engagement; own the full-funnel marketing calendar; publish Instagram posts, reels and carousels; edit short-form video; manage GoHighLevel newsletters, workflows, opt-in pages, lead nurturing and automations; monitor KPIs and support paid-media reporting and conversion tracking.</p></div></div>
-<div class="job"><time>Jul 2023 — Present</time><div><h3>Freelance Paid Media & Growth Marketing Specialist · Upwork</h3><p>Manage and optimize Google Ads and Meta Ads campaigns for local and service-based businesses; build and automate GoHighLevel CRM workflows; design and execute email marketing; report performance using Looker Studio and Power BI; deliver end-to-end growth strategy, implementation and continuous optimization.</p></div></div>
-<div class="job"><time>Jun 2024 — Feb 2025</time><div><h3>Digital Marketing Strategist (Paid Media & Growth) · Macau Entertainment</h3><p>Led high-budget Google Ads and Meta Ads acquisition campaigns with $100,000–$500,000 monthly spend; tested creatives, hooks, CTAs and audience segments; monitored daily performance, budgets and pacing; maintained performance dashboards; supported A/B testing across creatives, landing pages and funnels.</p></div></div>
-<div class="job"><time>Sep 2021 — Dec 2021</time><div><h3>Digital Marketing / Paid Media Specialist · Kwetu Marketing Agency</h3><p>Managed multi-client Google Ads and Meta Ads campaigns; conducted audience research, creative testing, budget monitoring and campaign optimization; built lead-generation funnels, CRM workflows, email campaigns and performance dashboards.</p></div></div>
-</div></section>
+        <p>
+          Performance-driven acquisition campaigns across Google Ads
+          and Meta Ads, supported by audience research, creative testing,
+          conversion tracking, and funnel optimization.
+        </p>
 
-<section><div class="kicker">Toolkit</div><h2>Platforms & tools</h2><div class="grid">
-<div class="card"><h3>Advertising</h3><p>Google Ads · Meta Ads</p></div><div class="card"><h3>Analytics</h3><p>GA4 · Looker Studio · Power BI</p></div><div class="card"><h3>CRM</h3><p>GoHighLevel · Email · SMS automation</p></div><div class="card"><h3>Creative</h3><p>Canva · CapCut · Adobe Premiere Pro</p></div>
-</div></section>
+        <ul>
+          <li>Campaign planning and execution</li>
+          <li>Audience and creative testing</li>
+          <li>Budget pacing and optimization</li>
+          <li>Conversion tracking</li>
+          <li>CPA and acquisition efficiency optimization</li>
+        </ul>
 
-<section id="contact"><div class="contact"><div class="kicker">Let's talk</div><h2>Looking for a marketer who can execute?</h2><p class="sub">Open to Paid Media, Growth Marketing, Performance Marketing and Digital Marketing opportunities.</p><div class="cta"><a class="btn primary" href="mailto:kipronomaina54@gmail.com">Email me</a><a class="btn" href="tel:+254726208832">Call +254 726 208 832</a><a class="btn" href="https://linkedin.com/in/brian-kiprono-b3a80325" target="_blank">LinkedIn</a></div></div></section>
-</main>
-<footer>© 2026 Brian Kiprono · Paid Media & Growth Marketing Specialist · Budget range: $100K–$500K monthly</footer>
-</body></html>
+        <div class="tools">
+          <span class="tool">Google Ads</span>
+          <span class="tool">Meta Ads</span>
+          <span class="tool">GA4</span>
+          <span class="tool">Looker Studio</span>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 2 -->
+      <div class="project">
+        <div class="project-number">02 / SOCIAL MEDIA</div>
+
+        <h3>Farout Nomads — Social Content</h3>
+
+        <p>
+          Managed social media execution and short-form content as
+          Digital Marketing Manager, supporting brand positioning,
+          audience engagement, and campaign objectives.
+        </p>
+
+        <ul>
+          <li>Instagram posts, Reels and carousels</li>
+          <li>Hooks, captions and text overlays</li>
+          <li>Content calendar management</li>
+          <li>Community engagement</li>
+          <li>Weekly performance reporting</li>
+        </ul>
+
+        <div class="tools">
+          <span class="tool">Instagram</span>
+          <span class="tool">Reels</span>
+          <span class="tool">Canva</span>
+          <span class="tool">CapCut</span>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 3 -->
+      <div class="project">
+        <div class="project-number">03 / PERFORMANCE MARKETING</div>
+
+        <h3>High-Budget Acquisition Campaigns</h3>
+
+        <p>
+          Led performance-driven paid media campaigns for an online
+          gaming brand, working with monthly advertising budgets ranging
+          from $50,000 to $500,000.
+        </p>
+
+        <ul>
+          <li>Google and Meta Ads management</li>
+          <li>Creative and audience testing</li>
+          <li>Daily budget and pacing monitoring</li>
+          <li>Landing page and funnel testing</li>
+          <li>Performance dashboard reporting</li>
+        </ul>
+
+        <div class="tools">
+          <span class="tool">Google Ads</span>
+          <span class="tool">Meta Ads</span>
+          <span class="tool">A/B Testing</span>
+          <span class="tool">Power BI</span>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 4 -->
+      <div class="project">
+        <div class="project-number">04 / AGENCY & FREELANCE</div>
+
+        <h3>Multi-Client Growth Marketing</h3>
+
+        <p>
+          Delivered paid media and growth marketing services for
+          multiple client accounts, focusing on lead generation,
+          conversions, CPA, ROAS, CRM workflows and reporting.
+        </p>
+
+        <ul>
+          <li>Google and Meta campaign management</li>
+          <li>Lead-generation funnels</li>
+          <li>CRM automation</li>
+          <li>Email campaigns</li>
+          <li>Client reporting and insights</li>
+        </ul>
+
+        <div class="tools">
+          <span class="tool">Google Ads</span>
+          <span class="tool">Meta Ads</span>
+          <span class="tool">GoHighLevel</span>
+          <span class="tool">Power BI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+
+    <div class="section-title">
+      <p>03 — Experience</p>
+      <h2>Professional <span>Experience</span></h2>
+    </div>
+
+    <div class="experience">
+
+      <div class="job">
+        <h3>Digital Marketing Manager</h3>
+        <div class="company">Farout Nomads Trips & Tours • 2025 – Present</div>
+
+        <ul>
+          <li>Lead digital marketing activities across social media, email and campaigns.</li>
+          <li>Manage the full-funnel marketing calendar.</li>
+          <li>Plan and publish Instagram posts, Reels and carousels.</li>
+          <li>Manage short-form video content and creative elements.</li>
+          <li>Manage community engagement and audience relationships.</li>
+          <li>Manage GoHighLevel email marketing and automation.</li>
+          <li>Support Google Ads and Meta Ads reporting and performance monitoring.</li>
+        </ul>
+      </div>
+
+
+      <div class="job">
+        <h3>Freelance Paid Media & Growth Marketing Specialist</h3>
+        <div class="company">Upwork • 2021 – Present</div>
+
+        <ul>
+          <li>Manage Google Ads and Meta Ads campaigns.</li>
+          <li>Build GoHighLevel CRM workflows.</li>
+          <li>Design and execute email marketing campaigns.</li>
+          <li>Track performance using Looker Studio and Power BI.</li>
+          <li>Deliver end-to-end growth strategy and optimization.</li>
+        </ul>
+      </div>
+
+
+      <div class="job">
+        <h3>Digital Marketing Strategist — Paid Media & Growth</h3>
+        <div class="company">Macau Entertainment • 2024 – 2025</div>
+
+        <ul>
+          <li>Led high-budget Google Ads and Meta Ads campaigns.</li>
+          <li>Managed $50,000–$500,000 monthly advertising spend.</li>
+          <li>Developed and tested creatives, hooks, CTAs and audiences.</li>
+          <li>Monitored daily performance, budgets and pacing.</li>
+          <li>Supported A/B testing of creatives, landing pages and funnels.</li>
+        </ul>
+      </div>
+
+
+      <div class="job">
+        <h3>Digital Marketing Specialist / Paid Media Specialist</h3>
+        <div class="company">Kwetu Marketing Agency • 2021</div>
+
+        <ul>
+          <li>Managed Google Ads and Meta Ads across multiple client accounts.</li>
+          <li>Developed lead-generation and conversion strategies.</li>
+          <li>Conducted audience research and creative testing.</li>
+          <li>Built lead-generation funnels and CRM workflows.</li>
+          <li>Created dashboards and performance reports.</li>
+          <li>Worked with creative teams on hooks, CTAs and short-form content.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+
+    <div class="contact">
+
+      <h2>Let's grow something.</h2>
+
+      <p>
+        I'm open to opportunities in digital marketing, paid media,
+        growth marketing, DTC, B2B SaaS and performance marketing.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+
+        <a
+          href="mailto:kipronomaina54@gmail.com"
+          class="btn btn-primary">
+          Email Me
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/brian-kiprono-b3a80325a/"
+          target="_blank"
+          class="btn btn-secondary">
+          LinkedIn
+        </a>
+
+      </div>
+
+      <div class="contact-info">
+        <span>📧 kipronomaina54@gmail.com</span>
+        <span>📱 +254 726 208 832</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Brian Kiprono — Paid Media & Growth Marketing Specialist
+  </div>
+</footer>
+
+</body>
+</html>
